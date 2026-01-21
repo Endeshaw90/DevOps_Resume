@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-push:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -25,6 +25,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          contecontext: ./DevOps_Resume 
+          # Since your files are now in the root, we use '.'
+          context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner_lowercase }}/devops_resume:latest
+          # We hardcode 'endeshaw90' to avoid the double-slash and capital letter errors
+          tags: ghcr.io/endeshaw90/devops_resume:latest
