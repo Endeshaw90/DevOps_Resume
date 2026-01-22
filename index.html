@@ -5,20 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endeshaw Belachew Birilie - DevOps Resume</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
-        .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        header { text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 20px; margin-bottom: 20px; }
-        h1 { margin: 0; color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; }
-        .contact-info { margin-top: 10px; font-size: 0.9em; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 10px; margin-top: 30px; text-transform: uppercase; font-size: 1.2em; }
-        h3 { color: #2c3e50; margin-bottom: 5px; }
-        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 5px; }
-        .job-header { display: flex; justify-content: space-between; align-items: baseline; }
-        .date { font-weight: bold; color: #7f8c8d; }
-        .project-item { margin-bottom: 15px; }
-        footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #bdc3c7; }
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-bright: #ffffff;
+            --accent-blue: #1f6feb;
+            --border-color: #30363d;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: var(--bg-color); 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+
+        .container { padding: 20px; }
+
+        header { 
+            text-align: left; 
+            border-bottom: 1px solid var(--border-color); 
+            padding-bottom: 30px; 
+            margin-bottom: 30px; 
+        }
+
+        h1 { margin: 0; color: var(--text-bright); font-size: 2.5em; }
+        
+        .contact-info { margin-top: 10px; color: #8b949e; }
+        .contact-info a { color: var(--accent-blue); text-decoration: none; }
+
+        h2 { 
+            color: var(--text-bright); 
+            text-transform: uppercase; 
+            font-size: 1.1em; 
+            letter-spacing: 1px;
+            margin-top: 40px;
+        }
+
+        /* Decorative Cards for Competencies & Skills */
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+
+        .card { 
+            background: var(--card-bg); 
+            border: 1px solid var(--border-color); 
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px; 
+            border-radius: 6px; 
+        }
+
+        .card h3 { color: var(--text-bright); margin-top: 0; font-size: 1.1em; }
+
+        /* Tag Labels for Certifications */
+        .tag-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .tag { 
+            background: #111b27; 
+            border: 1px solid #388bfd; 
+            color: #58a6ff; 
+            padding: 4px 12px; 
+            border-radius: 4px; 
+            font-size: 0.85em; 
+            font-weight: 500;
+        }
+
+        .experience-item { margin-bottom: 25px; border-bottom: 1px solid #21262d; padding-bottom: 15px; }
+        .job-title { color: var(--text-bright); font-weight: bold; font-size: 1.1em; }
+        .company { color: var(--accent-blue); }
+        .date { float: right; color: #8b949e; font-size: 0.9em; }
+
+        ul { padding-left: 20px; margin-top: 10px; }
+        li { margin-bottom: 8px; }
     </style>
 </head>
 <body>
@@ -26,115 +90,57 @@
         <header>
             <h1>Endeshaw Belachew Birilie</h1>
             <div class="contact-info">
-                Addis Ababa, Ethiopia | +251 947 929 665 | endeshethio1989@gmail.com<br>
+                Addis Ababa, Ethiopia | +251 947 929 665/+251712861176 | <a href="mailto:endeshethio1989@gmail.com">endeshethio1989@gmail.com</a><br>
                 GitHub: <a href="https://github.com/endeshaw90">endeshaw90</a> | 
                 LinkedIn: <a href="https://www.linkedin.com/in/endeshaw-belachew-32980a158/">Profile</a>
             </div>
         </header>
 
-        <section id="profile">
+        <section>
             <h2>Profile</h2>
-            <p>Operation Center Senior Specialist and DevOps practitioner with focused experience supporting Safaricom Telecommunication systems. Expert in Site Reliability Engineering (SRE), automating mission-critical workflows with Python and Bash, and managing containerized microservices. Proven expertise in high availability across multiple data centers, incident management, performance tuning, and maintaining CI/CD pipelines to ensure reliable financial and IT systems.</p>
+            <p>Operation Center Senior Specialist and DevOps practitioner with focused experience supporting Safaricom Telecommunication systems. Expert in Site Reliability Engineering (SRE), automating mission-critical workflows with Python and Bash, and managing containerized microservices.</p>
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div>
-                    <h3>Cloud Native & Deployment</h3>
-                    <ul>
-                        <li>Kubernetes cluster management & Docker containerization</li>
-                        <li>Jenkins CI/CD & GitHub Actions pipelines</li>
-                        <li>Ansible for automated configuration & scaling</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Database & Data Integrity</h3>
-                    <ul>
-                        <li>SQL/PLSQL optimization (MySQL, Oracle)</li>
-                        <li>High-traffic database cluster management</li>
-                        <li>ETL data pipeline validation</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Infrastructure & Hybrid Cloud</h3>
-                    <ul>
-                        <li>Advanced Enterprise Linux (RHEL, Ubuntu)</li>
-                        <li>Server hardening & performance tuning</li>
-                        <li>VMware & Azure Cloud infrastructure</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Reliability & Monitoring</h3>
-                    <ul>
-                        <li>24/7 Monitoring: Splunk, Grafana, ELK Stack</li>
-                        <li>Zabbix alerting & Deep Root Cause Analysis (RCA)</li>
-                        <li>Python & Bash automation scripting</li>
-                    </ul>
-                </div>
+        <h2>Professional Competencies</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Cross-Functional Collaboration</h3>
+                <p>Experienced in bridging the gap between Marketing, Engineering, and L2/L3 support teams to resolve production bottlenecks.</p>
             </div>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <div class="job-header">
-                    <h3>Operation Center Senior Specialist</h3>
-                    <span class="date">2024 – Present</span>
-                </div>
-                <p><strong>Gebeya (Safaricom Project)</strong></p>
-                <ul>
-                    <li>Provide first-level support and end-to-end monitoring for MPESA Core (G2), BSS, Tibco, and critical microservices.</li>
-                    <li>Execute log analysis, incident management, and traffic shifts across data centers to maintain uptime.</li>
-                    <li>Developed custom Bash and Python automation scripts for real-time system monitoring and health checks.</li>
-                    <li>Manage Linux server clusters, optimizing resource allocation for high-traffic environments.</li>
-                </ul>
+            <div class="card">
+                <h3>Critical Problem Solving</h3>
+                <p>Adept at performing high-pressure Root Cause Analysis (RCA) and implementing long-term fixes for complex system anomalies.</p>
             </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>Network Monitoring & Support</h3>
-                    <span class="date">Safaricom Project</span>
-                </div>
-                <p><strong>Tech Mahindra</strong></p>
-                <ul>
-                    <li>Monitored network and system performance using Splunk and Zabbix, tracking KPIs and transaction flows.</li>
-                    <li>Conducted anomaly monitoring to identify and escalate technical issues for timely resolution.</li>
-                    <li>Troubleshot and resolved system alarms and network stability issues.</li>
-                </ul>
+            <div class="card">
+                <h3>Agile & Adaptive Mindset</h3>
+                <p>Proven ability to manage shifting priorities in 24/7 high-availability environments like Safaricom’s Operation Center.</p>
             </div>
-        </section>
+        </div>
 
-        <section id="competencies">
-            <h2>Professional Competencies</h2>
+        <h2>Certifications</h2>
+        <div class="tag-container">
+            <span class="tag">Red Hat RHCSA</span>
+            <span class="tag">Linux Essentials</span>
+            <span class="tag">Kubernetes / CKA Preparation</span>
+            <span class="tag">Docker & Containerization</span>
+            <span class="tag">Python and Bash Scripting</span>
+            <span class="tag">Azure Network Engineer</span>
+            <span class="tag">Splunk Core Fundamentals</span>
+            <span class="tag">ITIL Foundation</span>
+            <span class="tag">VMware Data Center Virtualization</span>
+            <span class="tag">Azure DevOps Expert (InProgress)</span>
+        </div>
+
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <span class="date">2024 – Present</span>
+            <div class="job-title">Operation Center Senior Specialist</div>
+            <div class="company">Gebeya (Safaricom Project)</div>
             <ul>
-                <li><strong>Cross-Functional Collaboration:</strong> Bridging the gap between Marketing, Engineering, and L2/L3 support teams.</li>
-                <li><strong>Critical Problem Solving:</strong> High-pressure Root Cause Analysis (RCA) and long-term fix implementation.</li>
-                <li><strong>Agile & Adaptive Mindset:</strong> Managing shifting priorities in 24/7 high-availability environments.</li>
+                <li>Provide first-level support and end-to-end monitoring for MPESA Core (G2), BSS, Tibco, and critical microservices.</li>
+                <li>Developed custom Bash and Python automation scripts for real-time system monitoring.</li>
             </ul>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <p>Red Hat RHCSA, Linux Essentials, Kubernetes (CKA Prep), Docker & Containerization, Python & Bash Scripting, Azure Network Engineer, Splunk Core Fundamentals, ITIL Foundation, VMware Data Center Virtualization, Azure DevOps Expert (In Progress).</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-item"><strong>Infrastructure Observability Suite:</strong> Engineered automated dashboards using Python/Bash to reduce incident response times.</div>
-            <div class="project-item"><strong>Containerized Full-Stack Deployment:</strong> Developed a functional Java-based application with session management and dynamic computation.</div>
-            <div class="project-item"><strong>IoT Robotics:</strong> Built a robotic car with 360-degree live video streaming via ESP32.</div>
-        </section>
-
-        <section id="education">
-            <h2>Education & Languages</h2>
-            <p><strong>B.Tech in Electrical & Electronics Engineering</strong> | GITAM University, India | CGPA 9.19/10 (Top Rank)</p>
-            <p><strong>Languages:</strong> English (Fluent), Amharic (Native)</p>
-        </section>
-
-        <footer>
-            <p>Containerized Resume &copy; 2026 - Powered by Docker & Nginx</p>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
