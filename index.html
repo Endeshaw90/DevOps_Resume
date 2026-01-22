@@ -3,88 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endeshaw Birilie - DevOps Resume</title>
+    <title>Endeshaw Belachew Birilie - Operation Center Senior Specialist</title>
     <style>
-        :root { --primary: #2563eb; --dark: #1e293b; --text: #334155; --bg: #f8fafc; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 40px 20px; }
-        .resume-card { max-width: 900px; margin: auto; background: white; padding: 50px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-        header { border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: var(--dark); font-size: 2.5rem; }
-        .contact-info { color: var(--primary); font-weight: 500; margin-top: 10px; }
-        h2 { border-left: 5px solid var(--primary); padding-left: 15px; color: var(--dark); text-transform: uppercase; font-size: 1.2rem; margin-top: 40px; }
-        .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-        .skill-item { background: #eff6ff; padding: 10px 15px; border-radius: 6px; font-size: 0.9rem; border-left: 3px solid var(--primary); }
-        .job { margin-bottom: 25px; }
-        .job-title { font-weight: bold; color: var(--dark); font-size: 1.1rem; }
-        .job-meta { color: var(--primary); font-size: 0.9rem; margin-bottom: 10px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .cert-tag { display: inline-block; background: var(--dark); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; margin: 3px; }
+        :root { --primary: #2563eb; --dark: #1e293b; --text: #334155; --bg: #f8fafc; --accent: #3b82f6; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.5; color: var(--text); background: var(--bg); margin: 0; padding: 2rem 1rem; }
+        .resume { max-width: 900px; margin: auto; background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        h1 { margin: 0; color: var(--dark); font-size: 2.25rem; letter-spacing: -0.025em; }
+        .contact { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.75rem; color: var(--accent); font-weight: 500; font-size: 0.9rem; }
+        h2 { font-size: 1.25rem; color: var(--dark); text-transform: uppercase; border-left: 4px solid var(--primary); padding-left: 1rem; margin: 2rem 0 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+        .skill-cat { background: #f1f5f9; padding: 1rem; border-radius: 6px; }
+        .skill-cat strong { display: block; color: var(--primary); margin-bottom: 0.5rem; }
+        .exp-item { margin-bottom: 2rem; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: 700; color: var(--dark); }
+        .exp-sub { color: var(--accent); font-style: italic; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        ul { padding-left: 1.25rem; margin: 0.5rem 0; }
+        li { margin-bottom: 0.4rem; font-size: 0.95rem; }
+        .cert-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cert-tag { background: var(--dark); color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.8rem; }
+        .proj-item { margin-bottom: 1rem; padding-left: 1rem; border-left: 2px solid #e2e8f0; }
     </style>
 </head>
 <body>
-    <div class="resume-card">
+    <div class="resume">
         <header>
             <h1>Endeshaw Belachew Birilie</h1>
-            <div class="contact-info">
-                Addis Ababa, Ethiopia | +251 947 929 665 | endeshethio1989@gmail.com
+            <div class="contact">
+                <span>📍 Addis Ababa, Ethiopia</span>
+                <span>📞 +251 947 929 665 / +251 712 861 176</span>
+                <span>✉️ endeshethio1989@gmail.com</span>
+                <a href="https://www.linkedin.com/in/endeshaw3" style="text-decoration:none; color:inherit;">🔗 LinkedIn</a>
             </div>
-            <a href="https://www.linkedin.com/in/endeshaw3" target="_blank">LinkedIn Profile</a>
         </header>
 
         <section>
             <h2>Professional Summary</h2>
-            [cite_start]<p>Operation Center Senior Specialist with focused experience supporting Safaricom Telecommunication systems, including MPESA Core and Integration, BSS, and microservices[cite: 81]. [cite_start]Skilled in first-level support, end-to-end analysis, and ensuring high availability across data centers[cite: 82]. [cite_start]Hands-on with Linux administration, Python automation, Kubernetes, and CI/CD pipelines[cite: 83, 84].</p>
+            [cite_start]<p>Operation Center Senior Specialist at Safaricom with extensive experience in **CVM, BigData, BSS, and MPESA systems**[cite: 1]. [cite_start]Expert in campaign orchestration, log analysis, and file-based mediation within high-availability environments[cite: 1]. [cite_start]Highly proficient in Linux, SQL data validation, and Python automation, ensuring reliable offer delivery and operational stability through cross-functional collaboration[cite: 1].</p>
         </section>
 
         <section>
             <h2>Core Skills</h2>
-            <div class="skill-grid">
-                [cite_start]<div class="skill-item"><strong>FinTech:</strong> MPESA Core, Payment APIs, Fraud Detection [cite: 86, 88]</div>
-                [cite_start]<div class="skill-item"><strong>DevOps:</strong> Docker, Kubernetes, Jenkins, Ansible [cite: 95, 96]</div>
-                [cite_start]<div class="skill-item"><strong>Automation:</strong> Bash, Python, Shell Scripting [cite: 91, 95]</div>
-                [cite_start]<div class="skill-item"><strong>Monitoring:</strong> Grafana, Kibana, Splunk, Zabbix [cite: 94, 95]</div>
+            <div class="grid">
+                <div class="skill-cat">
+                    <strong>BSS & NCC Operations</strong>
+                    Provisioning, Charging, Billing & Mediation; [cite_start]L1 support for end-to-end orchestration and converged charging[cite: 1].
+                </div>
+                <div class="skill-cat">
+                    <strong>CVM & Data Operations</strong>
+                    [cite_start]Campaign orchestration monitoring, batch job validation, and complex SQL/PLSQL query optimization for data reporting[cite: 1].
+                </div>
+                <div class="skill-cat">
+                    <strong>Linux & Automation</strong>
+                    [cite_start]RHEL/Ubuntu administration, shell scripting, cron monitoring, and Bash/Python automation for performance tuning[cite: 1].
+                </div>
+                <div class="skill-cat">
+                    <strong>DevOps & Reliability</strong>
+                    [cite_start]Jenkins pipelines, Git workflows, Docker, Kubernetes fundamentals, and proactive incident management[cite: 1].
+                </div>
             </div>
         </section>
 
         <section>
             <h2>Professional Experience</h2>
-            <div class="job">
-                <div class="job-title">Operation Center Senior Specialist</div>
-                <div class="job-meta">Gebeya (Safaricom Project) | 2024 – Present</div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span>Operation Center Senior Specialist</span>
+                    <span>2024 – Present</span>
+                </div>
+                <div class="exp-sub">Gebeya (Safaricom Project)</div>
                 <ul>
-                    [cite_start]<li>Provide end-to-end monitoring for MPESA Core (G2), BSS, and Web APIs[cite: 102].</li>
-                    [cite_start]<li>Execute log analysis, incident management, and root cause analysis[cite: 105].</li>
-                    [cite_start]<li>Implement Bash and Python automation scripts for operational efficiency[cite: 106].</li>
-                    [cite_start]<li>Manage and optimize Linux server performance and cluster operations[cite: 107].</li>
+                    [cite_start]<li>Provide L1 support and end-to-end monitoring for CVM, NCC, BigData, MPESA Core (G2), BSS, and microservices[cite: 1].</li>
+                    [cite_start]<li>Perform log analysis and root cause analysis for campaign failures, implementing traffic shifts to maintain service[cite: 1].</li>
+                    [cite_start]<li>Implemented automation scripts in Bash and Python for real-time monitoring of CVM and BSS workflows[cite: 1].</li>
+                    [cite_start]<li>Collaborate with L2/L3 teams and marketing stakeholders for incident resolution related to campaign provisioning[cite: 1].</li>
                 </ul>
             </div>
 
-            <div class="job">
-                <div class="job-title">Network Monitoring & Support</div>
-                <div class="job-meta">Tech Mahindra (Safaricom Project)</div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span>Network Monitoring & Support</span>
+                    <span>Tech Mahindra (Safaricom Project)</span>
+                </div>
                 <ul>
-                    [cite_start]<li>Tracked network performance KPIs for MPESA, Splunk, and EKYC[cite: 113].</li>
-                    [cite_start]<li>Troubleshot network issues and managed incident tickets via cross-functional collaboration[cite: 116, 117].</li>
+                    [cite_start]<li>Monitored network performance (MPESA, Splunk, EKYC, Zabbix) and tracked KPIs for smooth operations[cite: 1].</li>
+                    [cite_start]<li>Troubleshot and resolved network issues, managed incident tickets, and maintained operational stability[cite: 1].</li>
+                    [cite_start]<li>Generated reports and escalated incidents to ensure timely resolution[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header"><span>Internships</span></div>
+                <ul>
+                    [cite_start]<li><strong>Cognizant:</strong> System Administration Intern (ServiceNow platform configuration)[cite: 1].</li>
+                    [cite_start]<li><strong>Global Quest Technology:</strong> Core Python & Java Intern[cite: 1].</li>
+                    [cite_start]<li><strong>ECERA Systems:</strong> Software Engineering Intern[cite: 1].</li>
                 </ul>
             </div>
         </section>
 
         <section>
             <h2>Certifications</h2>
-            <div>
-                [cite_start]<span class="cert-tag">Red Hat RHCSA [cite: 128]</span>
-                [cite_start]<span class="cert-tag">Kubernetes CKA [cite: 130]</span>
-                [cite_start]<span class="cert-tag">Docker Essentials [cite: 131]</span>
-                [cite_start]<span class="cert-tag">Azure Network Engineer [cite: 135]</span>
-                [cite_start]<span class="cert-tag">ITIL Foundation [cite: 137]</span>
+            <div class="cert-list">
+                <span class="cert-tag">Red Hat RHCSA</span>
+                <span class="cert-tag">Kubernetes CKA Preparation</span>
+                <span class="cert-tag">Docker Essentials</span>
+                <span class="cert-tag">Azure Network Engineer</span>
+                <span class="cert-tag">Azure DevOps Expert (InProgress)</span>
+                <span class="cert-tag">Splunk Core</span>
+                <span class="cert-tag">ITIL Foundation</span>
+                <span class="cert-tag">CCNA (AAU)</span>
             </div>
         </section>
 
         <section>
-            <h2>Education</h2>
-            <p><strong>Bachelor of Technology: Electrical & Electronics Engineering</strong><br>
-            GITAM University, India | [cite_start]Graduated with Top Rank (CGPA 9.19/10)[cite: 140].</p>
+            <h2>Education & Projects</h2>
+            <p><strong>B.Tech in Electrical & Electronics Engineering</strong> | GITAM University, India<br>
+            [cite_start]Top rank graduate, CGPA 9.19/10 (3.87/4.0 Ethiopian Standard)[cite: 1].</p>
+            
+            <div class="proj-item">
+                [cite_start]<strong>Automating Monitoring Dashboards:</strong> Developed proactive alerting mechanisms using automation scripts[cite: 1].
+            </div>
+            <div class="proj-item">
+                [cite_start]<strong>Shopping Cart Application:</strong> Java-based functional cart with session management and dynamic pricing[cite: 1].
+            </div>
+            <div class="proj-item">
+                [cite_start]<strong>Camera-Controlled Robotic Car:</strong> Built via ESP32 camera with 360° live video streaming[cite: 1].
+            </div>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            [cite_start]<p>English (Fluent), Amharic (Native) [cite: 1]</p>
         </section>
     </div>
 </body>
