@@ -6,23 +6,23 @@
     <title>Endeshaw Belachew Birilie - DevOps Engineer</title>
     <style>
         :root { --primary: #0ea5e9; --dark: #0f172a; --text: #334155; --bg: #f8fafc; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 2rem 1rem; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 2rem 1rem; }
         .resume-container { max-width: 900px; margin: auto; background: white; padding: 3rem; border-radius: 12px; box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
         header { border-bottom: 3px solid var(--primary); padding-bottom: 1rem; margin-bottom: 2rem; }
-        h1 { margin: 0; color: var(--dark); font-size: 2.5rem; }
-        .contact-bar { margin-top: 10px; font-weight: 600; color: var(--primary); font-size: 0.9rem; }
-        h2 { font-size: 1.3rem; color: var(--dark); text-transform: uppercase; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-top: 2rem; }
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem; }
-        .skill-box { background: #f1f5f9; padding: 1rem; border-radius: 8px; border-left: 4px solid var(--primary); }
-        .skill-box strong { display: block; color: var(--dark); margin-bottom: 5px; }
-        .exp-item { margin-bottom: 2rem; }
-        .exp-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--dark); }
-        .company { color: var(--primary); font-style: italic; display: block; margin-bottom: 0.5rem; }
-        ul { padding-left: 1.2rem; }
-        li { margin-bottom: 0.5rem; }
-        .tag-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-        .tag { background: var(--dark); color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.8rem; }
-        .project { background: #fafafa; border: 1px solid #eee; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; }
+        h1 { margin: 0; color: var(--dark); font-size: 2.5rem; letter-spacing: -0.05em; }
+        .contact-bar { margin-top: 10px; font-weight: 600; color: var(--primary); font-size: 0.95rem; }
+        h2 { font-size: 1.3rem; color: var(--dark); text-transform: uppercase; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-top: 2.5rem; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1rem; }
+        .skill-box { background: #f1f5f9; padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--primary); height: 100%; }
+        .skill-box strong { display: block; color: var(--dark); margin-bottom: 6px; font-size: 1.05rem; }
+        .experience-block { margin-bottom: 2.5rem; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: 800; color: var(--dark); font-size: 1.1rem; }
+        .company { color: var(--primary); font-style: italic; display: block; margin-bottom: 0.8rem; font-weight: 600; }
+        ul { padding-left: 1.2rem; margin: 0.5rem 0; }
+        li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+        .cert-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+        .tag { background: var(--dark); color: white; padding: 5px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 500; }
+        .project-card { background: #fafafa; border: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 8px; margin-bottom: 1.2rem; }
     </style>
 </head>
 <body>
@@ -31,85 +31,77 @@
             <h1>Endeshaw Belachew Birilie</h1>
             <div class="contact-bar">
                 Addis Ababa, Ethiopia | +251 947 929 665 | endeshethio1989@gmail.com | 
-                <a href="https://www.linkedin.com/in/endeshaw3" style="color: inherit; text-decoration: none;">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/endeshaw3" style="color: inherit; text-decoration: none;">LinkedIn Profile</a>
             </div>
         </header>
 
         <section>
-            <h2>Professional Summary</h2>
-            <p>Operation Center Senior Specialist and DevOps Practitioner with extensive experience managing high-availability telecommunication and FinTech systems at Safaricom. Expert in Site Reliability Engineering (SRE), automating complex workflows with Python and Bash, and managing containerized environments. Strong background in incident management, log analysis, and CI/CD pipelines to ensure 99.9% system uptime.</p>
+            <h2>DevOps Profile</h2>
+            <p>Operation Center Senior Specialist and DevOps practitioner with over 2 years of experience managing high-availability telecommunication and FinTech systems at Safaricom[cite: 7, 26]. Expert in Site Reliability Engineering (SRE), automating mission-critical workflows with Python and Bash, and managing containerized microservices[cite: 9, 21, 22]. Proven track record in incident management, performance tuning, and maintaining CI/CD pipelines to ensure 99.9% system uptime[cite: 10, 21].</p>
         </section>
 
         <section>
-            <h2>Technical Skills</h2>
+            <h2>Technical Core</h2>
             <div class="skills-grid">
                 <div class="skill-box">
                     <strong>Infrastructure & Cloud</strong>
-                    Linux Administration (RHEL/Ubuntu), Azure DevOps, VMware, Network Security (TCP/IP, Firewalls, CCNA).
+                    Linux Administration (RHEL, Ubuntu), VMware Virtualization, Azure VM/AD, and Network Security (TCP/IP, Firewalls)[cite: 17, 23, 59].
                 </div>
                 <div class="skill-box">
-                    <strong>DevOps & Automation</strong>
-                    Docker, Kubernetes (CKA Path), Jenkins CI/CD, GitHub Actions, Ansible, Git, Python & Bash Scripting.
+                    <strong>DevOps & Orchestration</strong>
+                    Kubernetes cluster management, Docker containerization, Jenkins CI/CD, and Ansible for automated deployment[cite: 21, 22].
                 </div>
                 <div class="skill-box">
-                    <strong>Observability & Monitoring</strong>
-                    Splunk, Grafana, Kibana (ELK), Zabbix, Prometheus, and Root Cause Analysis (RCA).
+                    <strong>Observability & SRE</strong>
+                    Real-time monitoring via Splunk, Grafana, and Kibana; Zabbix alerting, and Root Cause Analysis (RCA)[cite: 16, 20, 21].
                 </div>
                 <div class="skill-box">
-                    <strong>FinTech & Databases</strong>
-                    MPESA Core, BSS/OSS, SQL/PLSQL Optimization, MySQL, PostgreSQL, MongoDB, and Oracle.
+                    <strong>Automation & Languages</strong>
+                    Advanced Python and Bash scripting for operational efficiency, and API validation via Postman[cite: 9, 32].
                 </div>
             </div>
         </section>
 
         <section>
             <h2>Professional Experience</h2>
-            <div class="exp-item">
+            <div class="experience-block">
                 <div class="exp-header">
                     <span>Operation Center Senior Specialist</span>
                     <span>2024 – Present</span>
                 </div>
                 <span class="company">Gebeya (Safaricom Project)</span>
                 <ul>
-                    <li>Manage end-to-end monitoring and L1/L2 support for MPESA Core, CVM, BSS, and Tibco microservices.</li>
-                    <li>Developed Python and Bash automation scripts for real-time system health reporting and log parsing.</li>
-                    <li>Orchestrate critical traffic shifts across data centers to maintain service continuity during infrastructure failures.</li>
-                    <li>Optimize Linux server performance and manage high-traffic database cluster resource allocation.</li>
+                    <li>Manage L1 end-to-end monitoring for MPESA Core, BSS, Tibco, and microservices to ensure continuous availability[cite: 28, 29].</li>
+                    <li>Developed Python and Bash automation scripts for real-time system monitoring and reporting[cite: 32].</li>
+                    <li>Execute log analysis and root cause analysis (RCA) to maintain uninterrupted financial services[cite: 31].</li>
+                    <li>Orchestrate critical traffic shifts across data centers during infrastructure maintenance or failure[cite: 31].</li>
+                    <li>Maintain detailed technical documentation for system performance and operational procedures[cite: 36].</li>
                 </ul>
             </div>
 
-            <div class="exp-item">
+            <div class="experience-block">
                 <div class="exp-header">
                     <span>Network Monitoring & Support</span>
                     <span>Safaricom Project</span>
                 </div>
                 <span class="company">Tech Mahindra</span>
                 <ul>
-                    <li>Utilized Splunk and Zabbix for proactive observability of network KPIs and transaction flows.</li>
-                    <li>Led incident management efforts by correlating logs and performing deep-dive transaction analysis.</li>
-                    <li>Automated routine network status checks to improve incident response times.</li>
-                </ul>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header"><span>Technical Internships</span></div>
-                <ul>
-                    <li><strong>Cognizant:</strong> System Administration (ServiceNow platform automation).</li>
-                    <li><strong>Global Quest Technology:</strong> Backend Programming (Python & Java integration).</li>
-                    <li><strong>ECERA Systems:</strong> Software Engineering (SDLC & DevOps methodologies).</li>
+                    <li>Utilized Splunk and Zabbix for proactive observability of network KPIs and EKYC transaction flows[cite: 39].</li>
+                    <li>Led incident management by tracking anomalies and collaborating with cross-functional teams for resolution[cite: 40, 43].</li>
+                    <li>Troubleshot network and system issues to maintain high service reliability and infrastructure security[cite: 42, 45].</li>
                 </ul>
             </div>
         </section>
 
         <section>
             <h2>Certifications</h2>
-            <div class="tag-container">
+            <div class="cert-container">
                 <span class="tag">Red Hat RHCSA</span>
-                <span class="tag">Kubernetes CKA (In Progress)</span>
-                <span class="tag">Docker Essentials</span>
+                <span class="tag">Kubernetes Fundamentals</span>
+                <span class="tag">Docker & Containerization</span>
                 <span class="tag">Azure DevOps Expert</span>
                 <span class="tag">Azure Network Engineer</span>
-                <span class="tag">Splunk Core</span>
+                <span class="tag">Splunk Core Fundamentals</span>
                 <span class="tag">ITIL Foundation</span>
                 <span class="tag">CCNA (AAU)</span>
             </div>
@@ -117,21 +109,22 @@
 
         <section>
             <h2>DevOps Projects</h2>
-            <div class="project">
-                <strong>Infrastructure Observability Suite:</strong> Engineered automated dashboards and alerting scripts to reduce MTTR (Mean Time To Recovery) for production anomalies.
+            <div class="project-card">
+                <strong>Infrastructure Observability Suite:</strong> Engineered automated dashboards and alerting mechanisms using Python scripts to reduce incident response times[cite: 68].
             </div>
-            <div class="project">
-                <strong>Containerized Deployment Pipeline:</strong> Built a full-stack Java application deployed via Docker, focusing on environment parity and image optimization.
+            <div class="project-card">
+                <strong>Containerized Deployment:</strong> Built a full-stack Java application deployed via Docker, implementing object-oriented principles and session management[cite: 69, 70].
             </div>
-            <div class="project">
-                <strong>ESP32 IoT Controller:</strong> Developed a robotic car with live video streaming via an ESP32-CAM, utilizing low-latency web protocols.
+            <div class="project-card">
+                <strong>IoT Control System:</strong> Developed a robotic car featuring 360-degree live video streaming via an ESP32 camera and mobile app[cite: 71].
             </div>
         </section>
 
         <section>
-            <h2>Education & Languages</h2>
-            <p><strong>B.Tech in Electrical & Electronics Engineering</strong> - GITAM University, India (CGPA 9.19/10)</p>
-            <p><strong>Languages:</strong> English (Fluent), Amharic (Native)</p>
+            <h2>Education</h2>
+            <p><strong>B.Tech in Electrical & Electronics Engineering</strong><br>
+            GITAM University, India | Top Rank Graduate | CGPA 9.19/10 [cite: 66]</p>
+            <p><strong>Languages:</strong> English (Fluent), Amharic (Native) [cite: 73, 74]</p>
         </section>
     </div>
 </body>
