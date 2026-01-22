@@ -9,12 +9,6 @@ A containerized professional resume demonstrating a complete **local-to-cloud** 
 * **CI/CD:** GitHub Actions
 * **Hosting:** GitHub Pages
 
-## ⚡ Quick Start (Local)
-Run this resume locally in seconds:
-```bash
-docker build -t devops-resume .
-docker run -d -p 8080:80 --name resume-app devops-resume
-
 ## 🌐 Live Demo
 Access the production deployment here:
 <a href="https://endeshaw90.github.io/DevOps_Resume/" target="_blank">
