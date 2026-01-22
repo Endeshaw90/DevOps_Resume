@@ -17,4 +17,4 @@ docker run -d -p 8080:80 --name resume-app devops-resume
 ## 🌐 Live Demo
 Access the production deployment here:
 
-[**View My Live Resume**](https://endeshaw90.github.io/DevOps_Resume/)
+👉 [**View My Live Resume**](https://endeshaw90.github.io/DevOps_Resume/)
