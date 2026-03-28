@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endeshaw Belachew Birilie - My_Resume</title>
+
     <style>
         :root {
             --bg-color: #0d1117;
@@ -26,7 +27,7 @@
 
         .container { padding: 20px; }
 
-        /* ✅ HEADER */
+        /* HEADER */
         .header-container { 
             display: flex;
             justify-content: space-between;
@@ -36,18 +37,16 @@
             margin-bottom: 30px;
         }
 
-        .header-text {
-            max-width: 70%;
-        }
+        .header-text { max-width: 70%; }
 
-        /* ✅ PHOTO WITH RIGHT MARGIN */
+        /* PHOTO */
         .profile-photo {
             width: 130px;
             height: 130px;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid var(--accent-blue);
-            margin-right: 25px; /* 🔥 spacing from right */
+            margin-right: 25px; /* spacing from right */
         }
 
         h1 { margin: 0; color: var(--text-bright); font-size: 2.5em; }
@@ -107,11 +106,10 @@
         
         .footer { text-align: center; margin-top: 50px; padding: 20px; color: #8b949e; border-top: 1px solid var(--border-color); }
 
-        /* ✅ MOBILE */
+        /* MOBILE */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
-                align-items: flex-start;
             }
 
             .profile-photo {
@@ -123,125 +121,180 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
 
-        <!-- ✅ HEADER WITH IMAGE -->
-        <header class="header-container">
-            <div class="header-text">
-                <h1>Endeshaw Belachew Birilie</h1>
-                <div class="contact-info">
-                    Addis Ababa, Ethiopia | +251 947 929 665 | 
-                    <a href="mailto:endeshethio1989@gmail.com">endeshethio1989@gmail.com</a><br>
-                    GitHub: <a href="https://github.com/endeshaw90">endeshaw90</a> | 
-                    LinkedIn: <a href="https://www.linkedin.com/in/endeshaw3/" target="_blank">Profile</a>
-                </div>
-            </div>
+<!-- HEADER -->
+<header class="header-container">
+    <div class="header-text">
+        <h1>Endeshaw Belachew Birilie</h1>
+        <div class="contact-info">
+            Addis Ababa, Ethiopia | +251 947 929 665 | 
+            <a href="mailto:endeshethio1989@gmail.com">endeshethio1989@gmail.com</a><br>
+            GitHub: <a href="https://github.com/endeshaw90">endeshaw90</a> | 
+            LinkedIn: <a href="https://www.linkedin.com/in/endeshaw3/" target="_blank">Profile</a>
+        </div>
+    </div>
 
-            <img src="image/ID_Photo.jpg" alt="Profile Photo" class="profile-photo">
-        </header>
+    <img src="image/ID_Photo.jpg" alt="Profile Photo" class="profile-photo">
+</header>
 
-        <section id="profile">
-            <h2>Profile</h2>
-            <p>DevOps Engineer with focused experience supporting Safaricom Telecommunication systems as BSS L2 Support Enginner. Expert in Site Reliability Engineering (SRE), automating mission-critical workflows with Python and Bash, and managing containerized microservices. Proven expertise in high availability across multiple data centers, incident management, performance tuning, and maintaining CI/CD pipelines.</p>
-        </section>
+<!-- PROFILE -->
+<section id="profile">
+    <h2>Profile</h2>
+    <p>DevOps Engineer with focused experience supporting Safaricom Telecommunication systems as BSS L2 Support Enginner. Expert in Site Reliability Engineering (SRE), automating mission-critical workflows with Python and Bash, and managing containerized microservices. Proven expertise in high availability across multiple data centers, incident management, performance tuning, and maintaining CI/CD pipelines to ensure reliable financial and IT systems.</p>
+</section>
 
-        <section id="technical-skills">
-            <h2>Technical Skills</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <h3>Kubernetes & Cloud Native Deployment</h3>
-                    <ul>
-                        <li>Kubernetes cluster management</li>
-                        <li>Docker containerization</li>
-                        <li>Jenkins CI/CD & GitHub Actions</li>
-                        <li>Ansible for automated scaling</li>
-                    </ul>
-                </div>
+<!-- TECHNICAL SKILLS -->
+<section id="technical-skills">
+    <h2>Technical Skills</h2>
+    <div class="grid-container">
 
-                <div class="card">
-                    <h3>Database Management & Data Integrity</h3>
-                    <ul>
-                        <li>SQL/PLSQL optimization</li>
-                        <li>MySQL & Oracle Clusters</li>
-                        <li>Big Data monitoring</li>
-                        <li>ETL data pipeline validation</li>
-                    </ul>
-                </div>
+        <div class="card">
+            <h3>Kubernetes & Cloud Native Deployment</h3>
+            <ul>
+                <li>Kubernetes cluster management</li>
+                <li>Docker containerization</li>
+                <li>Jenkins CI/CD & GitHub Actions</li>
+                <li>Ansible for automated scaling</li>
+            </ul>
+        </div>
 
-                <div class="card">
-                    <h3>Infrastructure & Operations</h3>
-                    <ul>
-                        <li>Linux (RHEL, Ubuntu)</li>
-                        <li>VMware</li>
-                        <li>Azure</li>
-                    </ul>
-                </div>
+        <div class="card">
+            <h3>Database Management & Data Integrity</h3>
+            <ul>
+                <li>SQL/PLSQL optimization</li>
+                <li>MySQL & Oracle Clusters</li>
+                <li>Big Data monitoring</li>
+                <li>ETL data pipeline validation</li>
+            </ul>
+        </div>
 
-                <div class="card">
-                    <h3>Monitoring</h3>
-                    <ul>
-                        <li>Splunk, Grafana, Kibana</li>
-                        <li>Zabbix</li>
-                        <li>API validation</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <div class="card">
+            <h3>Infrastructure & Operations</h3>
+            <ul>
+                <li>Advanced Enterprise Linux (RHEL, Ubuntu)</li>
+                <li>Server hardening & performance tuning</li>
+                <li>VMware virtualization</li>
+                <li>Azure Cloud management</li>
+            </ul>
+        </div>
 
-        <section id="experience">
-            <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>Site Reliability & Monitoring</h3>
+            <ul>
+                <li>Splunk, Grafana, Kibana (ELK)</li>
+                <li>Zabbix alerting & deep RCA</li>
+                <li>Bash & Python scripting</li>
+                <li>API validation via Postman</li>
+            </ul>
+        </div>
 
-            <div class="experience-item">
-                <div class="job-header">
-                    <span class="job-title">Operation Center Senior Specialist</span>
-                    <span class="date">2024 – Present</span>
-                </div>
-                <div class="company">Gebeya (Safaricom Project)</div>
-                <ul>
-                    <li>Monitoring MPESA Core, BSS, APIs</li>
-                    <li>Incident management & RCA</li>
-                    <li>Automation with Bash & Python</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-header">
-                    <span class="job-title">Network Monitoring & Support</span>
-                    <span class="date">Safaricom Project</span>
-                </div>
-                <div class="company">Tech Mahindra</div>
-                <ul>
-                    <li>Splunk & Zabbix monitoring</li>
-                    <li>Issue troubleshooting</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <h3>Observability Suite</h3>
-                    <p>Monitoring dashboards with automation.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Containerized App</h3>
-                    <p>Docker-based full stack deployment.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p>B.Tech Electrical & Electronics Engineering - GITAM University</p>
-            <p>CGPA: 3.87</p>
-        </section>
-
-        <div class="footer">
-            DevOps Resume | Docker + Nginx | 2026
+        <div class="card">
+            <h3>Automation & Testing</h3>
+            <ul>
+                <li>Advanced Bash & Python scripting</li>
+                <li>Automated API validation</li>
+                <li>System health checks automation</li>
+                <li>SQL/PLSQL optimization</li>
+            </ul>
         </div>
 
     </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Operation Center Senior Specialist</span>
+            <span class="date">2024 – Present</span>
+        </div>
+        <div class="company">Gebeya (Safaricom Project)</div>
+        <ul>
+            <li>Provide monitoring for MPESA Core, BSS, Tibco</li>
+            <li>Log analysis & incident management</li>
+            <li>Traffic shifting across data centers</li>
+            <li>Automation using Bash & Python</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">Network Monitoring & Support</span>
+            <span class="date">Safaricom Project</span>
+        </div>
+        <div class="company">Tech Mahindra</div>
+        <ul>
+            <li>Monitoring via Splunk & Zabbix</li>
+            <li>Issue detection & troubleshooting</li>
+        </ul>
+    </div>
+</section>
+
+<!-- COMPETENCIES -->
+<section id="competencies">
+    <h2>Professional Competencies</h2>
+    <div class="grid-container">
+        <div class="card">
+            <h3>Cross-Functional Collaboration</h3>
+            <p>Work across teams to resolve bottlenecks.</p>
+        </div>
+        <div class="card">
+            <h3>Critical Problem Solving</h3>
+            <p>Strong RCA and production troubleshooting.</p>
+        </div>
+        <div class="card">
+            <h3>Agile Mindset</h3>
+            <p>Handling dynamic production environments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="tag-container">
+        <span class="tag">RHCSA</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Azure</span>
+        <span class="tag">Splunk</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid-container">
+        <div class="card">
+            <h3>Observability Suite</h3>
+            <p>Monitoring dashboards and alerting automation.</p>
+        </div>
+        <div class="card">
+            <h3>Containerized App</h3>
+            <p>Docker-based full stack deployment.</p>
+        </div>
+        <div class="card">
+            <h3>IoT Robotics</h3>
+            <p>ESP32 streaming robotic system.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education & Languages</h2>
+    <p><strong>B.Tech Electrical & Electronics Engineering</strong> | GITAM University</p>
+    <P> CGPA: <bold>3.87</bold></P>
+    <p><strong>Languages:</strong> English, Amharic</p>
+</section>
+
+<div class="footer">
+    Containerized DevOps Resume | Docker & Nginx | 2026
+</div>
+
+</div>
 </body>
 </html>
