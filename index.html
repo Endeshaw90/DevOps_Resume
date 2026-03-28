@@ -26,7 +26,7 @@
 
         .container { padding: 20px; }
 
-        /* ✅ HEADER WITH PHOTO */
+        /* ✅ HEADER */
         .header-container { 
             display: flex;
             justify-content: space-between;
@@ -37,20 +37,17 @@
         }
 
         .header-text {
-            max-width: 75%;
+            max-width: 70%;
         }
 
+        /* ✅ PHOTO WITH RIGHT MARGIN */
         .profile-photo {
             width: 130px;
             height: 130px;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid var(--accent-blue);
-            transition: transform 0.3s;
-        }
-
-        .profile-photo:hover {
-            transform: scale(1.05);
+            margin-right: 25px; /* 🔥 spacing from right */
         }
 
         h1 { margin: 0; color: var(--text-bright); font-size: 2.5em; }
@@ -109,8 +106,22 @@
         li { margin-bottom: 5px; }
         
         .footer { text-align: center; margin-top: 50px; padding: 20px; color: #8b949e; border-top: 1px solid var(--border-color); }
+
+        /* ✅ MOBILE */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile-photo {
+                margin-top: 20px;
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
 
@@ -126,15 +137,12 @@
                 </div>
             </div>
 
-            <!-- ✅ YOUR PHOTO -->
             <img src="image/ID_Photo.jpg" alt="Profile Photo" class="profile-photo">
         </header>
 
-        <!-- REST OF YOUR CV (UNCHANGED) -->
-
         <section id="profile">
             <h2>Profile</h2>
-            <p>DevOps Engineer with focused experience supporting Safaricom Telecommunication systems as BSS L2 Support Enginner. Expert in Site Reliability Engineering (SRE), automating mission-critical workflows with Python and Bash, and managing containerized microservices. Proven expertise in high availability across multiple data centers, incident management, performance tuning, and maintaining CI/CD pipelines to ensure reliable financial and IT systems.</p>
+            <p>DevOps Engineer with focused experience supporting Safaricom Telecommunication systems as BSS L2 Support Enginner. Expert in Site Reliability Engineering (SRE), automating mission-critical workflows with Python and Bash, and managing containerized microservices. Proven expertise in high availability across multiple data centers, incident management, performance tuning, and maintaining CI/CD pipelines.</p>
         </section>
 
         <section id="technical-skills">
@@ -159,11 +167,79 @@
                         <li>ETL data pipeline validation</li>
                     </ul>
                 </div>
+
+                <div class="card">
+                    <h3>Infrastructure & Operations</h3>
+                    <ul>
+                        <li>Linux (RHEL, Ubuntu)</li>
+                        <li>VMware</li>
+                        <li>Azure</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Monitoring</h3>
+                    <ul>
+                        <li>Splunk, Grafana, Kibana</li>
+                        <li>Zabbix</li>
+                        <li>API validation</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <span class="job-title">Operation Center Senior Specialist</span>
+                    <span class="date">2024 – Present</span>
+                </div>
+                <div class="company">Gebeya (Safaricom Project)</div>
+                <ul>
+                    <li>Monitoring MPESA Core, BSS, APIs</li>
+                    <li>Incident management & RCA</li>
+                    <li>Automation with Bash & Python</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <span class="job-title">Network Monitoring & Support</span>
+                    <span class="date">Safaricom Project</span>
+                </div>
+                <div class="company">Tech Mahindra</div>
+                <ul>
+                    <li>Splunk & Zabbix monitoring</li>
+                    <li>Issue troubleshooting</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Observability Suite</h3>
+                    <p>Monitoring dashboards with automation.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Containerized App</h3>
+                    <p>Docker-based full stack deployment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>B.Tech Electrical & Electronics Engineering - GITAM University</p>
+            <p>CGPA: 3.87</p>
+        </section>
+
         <div class="footer">
-            Containerized DevOps Resume | Powered by Docker & Nginx | 2026
+            DevOps Resume | Docker + Nginx | 2026
         </div>
 
     </div>
