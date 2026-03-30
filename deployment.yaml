@@ -4,6 +4,7 @@ metadata:
   name: devops-resume-app
   namespace: argocd
 spec:
+  replicas: 4
   project: default
   source:
     repoURL: https://github.com/Endeshaw90/DevOps_Resume
@@ -16,4 +17,4 @@ spec:
     automated:
       prune: true
       selfHeal: true
-  replicas: 4
+  
