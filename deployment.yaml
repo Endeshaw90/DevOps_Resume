@@ -1,20 +1,19 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: devops-resume-app
-  namespace: argocd
+  name: my-web-server
 spec:
-  replicas: 4
-  project: default
-  source:
-    repoURL: https://github.com/Endeshaw90/DevOps_Resume
-    targetRevision: HEAD
-    path: .
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-  
+  replicas: 4               # Set your desired 4 replicas here
+  selector:
+    matchLabels:
+      app: nginx-web
+  template:
+    metadata:
+      labels:
+        app: nginx-web
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
