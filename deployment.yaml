@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-web-server
 spec:
-  replicas: 4               # Set your desired 4 replicas here
+  replicas: 10              # Set your desired 4 replicas here
   selector:
     matchLabels:
       app: nginx-web
