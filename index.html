@@ -1,1127 +1,1116 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endeshaw Belachew Birilie - BSS L2 Support | DevOps Engineer</title>
 
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --text-main: #c9d1d9;
-            --text-bright: #ffffff;
-            --accent-blue: #2f81f7;
-            --border-color: #30363d;
-            --tag-bg: #111b27;
-        }
+```
+<title>Endeshaw Belachew Birilie - BSS L2 Support | DevOps | AI Engineering</title>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            background-color: var(--bg-color);
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+<style>
+    :root {
+        --bg-color: #0d1117;
+        --card-bg: #161b22;
+        --text-main: #c9d1d9;
+        --text-bright: #ffffff;
+        --accent-blue: #2f81f7;
+        --border-color: #30363d;
+        --tag-bg: #111b27;
+    }
 
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                     Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-main);
+        background-color: var(--bg-color);
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .header-text {
+        flex: 1;
+    }
+
+    .header-text h1 {
+        margin: 0;
+        color: var(--text-bright);
+        font-size: 2.4em;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+
+    .header-text h2 {
+        color: var(--accent-blue);
+        font-size: 1.15em;
+        margin: 8px 0 15px 0;
+        border: none;
+        text-transform: none;
+        padding: 0;
+    }
+
+    .contact-info {
+        font-size: 0.95em;
+        color: #8b949e;
+    }
+
+    .contact-info a {
+        color: #58a6ff;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid var(--border-color);
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    h2 {
+        color: var(--text-bright);
+        text-transform: uppercase;
+        font-size: 0.9em;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    h2::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: var(--accent-blue);
+        margin-right: 10px;
+        border-radius: 2px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        border-radius: 8px;
+        transition: border-color 0.3s, transform 0.2s;
+    }
+
+    .card:hover {
+        border-color: #8b949e;
+        transform: translateY(-2px);
+    }
+
+    .card h3 {
+        color: var(--accent-blue);
+        margin: 0 0 10px 0;
+        font-size: 1.05em;
+    }
+
+    .experience-item {
+        margin: 25px 0;
+        padding-left: 15px;
+        border-left: 2px solid var(--border-color);
+    }
+
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 15px;
+    }
+
+    .job-title {
+        color: var(--text-bright);
+        font-weight: 600;
+        font-size: 1.15em;
+    }
+
+    .company {
+        color: var(--accent-blue);
+        font-weight: 500;
+    }
+
+    .date {
+        color: #8b949e;
+        font-size: 0.85em;
+        font-family: monospace;
+        white-space: nowrap;
+    }
+
+    .tag-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .tag {
+        background: var(--tag-bg);
+        border: 1px solid #388bfd;
+        color: #58a6ff;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.75em;
+        font-weight: 600;
+    }
+
+    ul {
+        padding-left: 18px;
+        margin-top: 8px;
+    }
+
+    li {
+        margin-bottom: 6px;
+        font-size: 0.95em;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 60px;
+        padding: 30px;
+        color: #484f58;
+        font-size: 0.8em;
+        border-top: 1px solid var(--border-color);
+    }
+
+    @media (max-width: 768px) {
         .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 40px;
-            margin-bottom: 20px;
-        }
-
-        .header-text {
-            flex: 1;
-        }
-
-        .header-text h1 {
-            margin: 0;
-            color: var(--text-bright);
-            font-size: 2.4em;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
-        }
-
-        .header-text h2 {
-            color: var(--accent-blue);
-            font-size: 1.2em;
-            margin: 6px 0 15px 0;
-            border: none;
-            text-transform: none;
-            padding: 0;
-        }
-
-        .contact-info {
-            font-size: 0.95em;
-            color: #8b949e;
-        }
-
-        .contact-info a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+            flex-direction: column-reverse;
+            text-align: center;
         }
 
         .profile-photo {
-            width: 140px;
-            height: 140px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid var(--border-color);
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-
-        h2 {
-            color: var(--text-bright);
-            text-transform: uppercase;
-            font-size: 0.9em;
-            letter-spacing: 2px;
-            margin-top: 50px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
-
-        h2::before {
-            content: "";
-            width: 12px;
-            height: 12px;
-            background: var(--accent-blue);
-            margin-right: 10px;
-            border-radius: 2px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(280px, 1fr)
-            );
-            gap: 16px;
-            margin-top: 20px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 20px;
-            border-radius: 8px;
-            transition: border-color 0.3s, transform 0.2s;
-        }
-
-        .card:hover {
-            border-color: #8b949e;
-            transform: translateY(-2px);
-        }
-
-        .card h3 {
-            color: var(--accent-blue);
-            margin: 0 0 10px 0;
-            font-size: 1.05em;
-        }
-
-        .experience-item {
-            margin: 25px 0;
-            padding-left: 15px;
-            border-left: 2px solid var(--border-color);
+            margin-bottom: 20px;
+            margin-right: 0;
         }
 
         .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 15px;
-        }
-
-        .job-title {
-            color: var(--text-bright);
-            font-weight: 600;
-            font-size: 1.15em;
-        }
-
-        .company {
-            color: var(--accent-blue);
-            font-weight: 500;
+            flex-direction: column;
+            gap: 2px;
         }
 
         .date {
-            color: #8b949e;
-            font-size: 0.85em;
-            font-family: monospace;
-            white-space: nowrap;
+            white-space: normal;
+        }
+    }
+
+    @media print {
+        body {
+            background: white;
+            color: black;
+            padding: 0;
         }
 
-        .tag-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
+        .card {
+            border: 1px solid #ccc;
+            background: white;
         }
+    }
+</style>
+```
 
-        .tag {
-            background: var(--tag-bg);
-            border: 1px solid #388bfd;
-            color: #58a6ff;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.75em;
-            font-weight: 600;
-        }
-
-        ul {
-            padding-left: 18px;
-            margin-top: 8px;
-        }
-
-        li {
-            margin-bottom: 6px;
-            font-size: 0.95em;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 60px;
-            padding: 30px;
-            color: #484f58;
-            font-size: 0.8em;
-            border-top: 1px solid var(--border-color);
-        }
-
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-
-            .profile-photo {
-                margin-bottom: 20px;
-                margin-right: 0;
-            }
-
-            .job-header {
-                flex-direction: column;
-                gap: 2px;
-            }
-
-            .date {
-                white-space: normal;
-            }
-        }
-
-        @media print {
-            body {
-                background: white;
-                color: black;
-                padding: 0;
-            }
-
-            .card {
-                border: 1px solid #ccc;
-                background: white;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- ================= HEADER ================= -->
+```
+<!-- ================= HEADER ================= -->
 
-    <header class="header-container">
+<header class="header-container">
 
-        <div class="header-text">
+    <div class="header-text">
 
-            <h1>Endeshaw Belachew Birilie</h1>
+        <h1>Endeshaw Belachew Birilie</h1>
 
-            <h2>BSS L2 Support || DevOps Engineer</h2>
+        <h2>BSS L2 Support || DevOps Engineer</h2>
 
-            <div class="contact-info">
+        <div class="contact-info">
 
-                Addis Ababa, Ethiopia
-                • +251 947 929 665
-                • +251 712 861 176
+            Addis Ababa, Ethiopia
+            • +251 947 929 665
+            • +251 712 861 176
 
-                <br>
+            <br>
 
-                <a href="mailto:endeshethio1989@gmail.com">
-                    endeshethio1989@gmail.com
-                </a>
+            <a href="mailto:endeshethio1989@gmail.com">
+                endeshethio1989@gmail.com
+            </a>
 
-                <br>
+            <br>
 
-                <a
-                    href="https://github.com/Endeshaw90"
-                    target="_blank"
-                >
-                    GitHub
-                </a>
+            <a
+                href="https://github.com/Endeshaw90"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
 
-                |
+            |
 
-                <a
-                    href="https://www.linkedin.com/in/endeshaw3/"
-                    target="_blank"
-                >
-                    LinkedIn
-                </a>
-
-            </div>
+            <a
+                href="https://www.linkedin.com/in/endeshaw3/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
 
         </div>
 
-        <img
-            src="image/ID_Photo.jpg"
-            alt="Endeshaw Belachew"
-            class="profile-photo"
-        >
+    </div>
 
-    </header>
+    <img
+        src="image/ID_Photo.jpg"
+        alt="Endeshaw Belachew"
+        class="profile-photo"
+    >
+
+</header>
 
 
-    <!-- ================= PROFESSIONAL SUMMARY ================= -->
+<!-- ================= PROFESSIONAL PROFILE ================= -->
 
-    <section id="profile">
+<section id="profile">
 
-        <h2>Professional Summary</h2>
+    <h2>Professional Profile</h2>
+
+    <ul>
+
+        <li>
+            BSS L2 Support & DevOps Engineer with hands-on experience
+            in <strong>Kubernetes, Docker, CI/CD, GitOps, cloud,
+            automation, observability, application operations,
+            and production support</strong> across telecom and
+            fintech environments.
+        </li>
+
+        <li>
+            Experienced in application deployment, release validation,
+            database configuration, API and integration testing,
+            incident investigation, root-cause analysis, and
+            production troubleshooting.
+        </li>
+
+        <li>
+            Building expertise in <strong>AI Engineering, RAG,
+            LLMOps, Agentic AI, MCP, and AIOps</strong>, with a focus
+            on combining AI systems with DevOps and operational
+            automation.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- ================= TECHNICAL SKILLS ================= -->
+
+<section id="technical-skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="grid-container">
+
+
+        <!-- AI ENGINEERING -->
+
+        <div class="card">
+
+            <h3>AI Engineering</h3>
+
+            <ul>
+
+                <li>
+                    Python, LLMs & Prompt Engineering
+                </li>
+
+                <li>
+                    RAG & Agentic AI
+                </li>
+
+                <li>
+                    AI Agents & MCP
+                </li>
+
+                <li>
+                    LLMOps & AI Evaluation
+                </li>
+
+                <li>
+                    AI-powered operational automation
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- RAG & LLM SYSTEMS -->
+
+        <div class="card">
+
+            <h3>RAG & LLM Systems</h3>
+
+            <ul>
+
+                <li>
+                    LangChain & LangGraph
+                </li>
+
+                <li>
+                    FAISS & Vector Search
+                </li>
+
+                <li>
+                    Embeddings & semantic search
+                </li>
+
+                <li>
+                    Hybrid retrieval & reranking
+                </li>
+
+                <li>
+                    Grounded generation & evaluation
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- AIOPS -->
+
+        <div class="card">
+
+            <h3>AIOps & Intelligent Automation</h3>
+
+            <ul>
+
+                <li>
+                    AI-driven incident analysis
+                </li>
+
+                <li>
+                    Log analysis & anomaly investigation
+                </li>
+
+                <li>
+                    Root-cause analysis
+                </li>
+
+                <li>
+                    Automated troubleshooting
+                </li>
+
+                <li>
+                    Runbook & operational automation
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DEVOPS -->
+
+        <div class="card">
+
+            <h3>DevOps & Platform Engineering</h3>
+
+            <ul>
+
+                <li>
+                    Docker & Kubernetes
+                </li>
+
+                <li>
+                    Helm & Argo CD
+                </li>
+
+                <li>
+                    GitOps
+                </li>
+
+                <li>
+                    Linux: RHEL & Ubuntu
+                </li>
+
+                <li>
+                    Application deployment & operations
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- CI/CD -->
+
+        <div class="card">
+
+            <h3>CI/CD & Infrastructure</h3>
+
+            <ul>
+
+                <li>
+                    Jenkins & GitHub Actions
+                </li>
+
+                <li>
+                    GitLab CI/CD & Git Flow
+                </li>
+
+                <li>
+                    Terraform & Ansible
+                </li>
+
+                <li>
+                    Release automation
+                </li>
+
+                <li>
+                    Infrastructure automation
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- CLOUD -->
+
+        <div class="card">
+
+            <h3>Cloud & Security</h3>
+
+            <ul>
+
+                <li>
+                    AWS & Azure
+                </li>
+
+                <li>
+                    HashiCorp Vault
+                </li>
+
+                <li>
+                    VMware virtualization
+                </li>
+
+                <li>
+                    Infrastructure operations
+                </li>
+
+                <li>
+                    Cloud-native technologies
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DATA -->
+
+        <div class="card">
+
+            <h3>Data & Integration</h3>
+
+            <ul>
+
+                <li>
+                    MySQL, PostgreSQL & Oracle
+                </li>
+
+                <li>
+                    REST APIs
+                </li>
+
+                <li>
+                    API integration & testing
+                </li>
+
+                <li>
+                    Postman
+                </li>
+
+                <li>
+                    Database configuration
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- OBSERVABILITY -->
+
+        <div class="card">
+
+            <h3>Observability & Operations</h3>
+
+            <ul>
+
+                <li>
+                    Splunk
+                </li>
+
+                <li>
+                    Prometheus & Grafana
+                </li>
+
+                <li>
+                    Monitoring & alerting
+                </li>
+
+                <li>
+                    Incident management & RCA
+                </li>
+
+                <li>
+                    SLA/OLA & production operations
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROFESSIONAL EXPERIENCE ================= -->
+
+<section id="experience">
+
+    <h2>Professional Experience</h2>
+
+
+    <!-- 6D TECHNOLOGIES -->
+
+    <div class="experience-item">
+
+        <div class="job-header">
+
+            <span class="job-title">
+                BSS L2 Operation Engineer
+            </span>
+
+            <span class="date">
+                March 2026 – Present
+            </span>
+
+        </div>
+
+        <div class="company">
+            6D Technologies
+        </div>
 
         <ul>
 
             <li>
-                DevOps and BSS L2 Operations Engineer with hands-on experience
-                supporting Kubernetes-based applications, CI/CD workflows,
-                GitOps deployments, automation, application releases, and
-                production operations in telecom and fintech environments.
+                Provide L2 operational support for internal BSS
+                applications and integrated third-party systems
+                in a high-availability production environment.
             </li>
 
             <li>
-                Skilled in Kubernetes, Docker, Helm, Argo CD, Jenkins,
-                Ansible, Linux, Bash, Python, Splunk, Grafana, Prometheus,
-                and MySQL database operations.
+                Investigate and resolve application, API, integration,
+                database, and service incidents through log analysis,
+                transaction tracing, root-cause analysis, and
+                cross-team collaboration.
             </li>
 
             <li>
-                Experienced in application testing, deployment validation,
-                monitoring, incident management, root-cause analysis,
-                API integration, and operational automation.
+                Support Kubernetes-based applications using Docker,
+                Kubernetes, Helm, and Argo CD GitOps workflows.
             </li>
 
             <li>
-                Currently working as a BSS L2 Operation Engineer at
-                6D Technologies, providing application deployment,
-                database configuration updates, and L2 operational support
-                for internal BSS applications and integrated third-party
-                systems in a high-availability production environment.
+                Support CI/CD and deployment automation using Jenkins,
+                GitHub Actions, Ansible, Bash, and Python.
+            </li>
+
+            <li>
+                Test and validate application updates, configuration
+                changes, releases, and new features through functional,
+                API, integration, smoke, and post-deployment testing.
+            </li>
+
+            <li>
+                Support application deployments through release
+                validation, service health checks, post-deployment
+                monitoring, and issue investigation.
+            </li>
+
+            <li>
+                Monitor applications and infrastructure using Splunk,
+                Grafana, and Prometheus and support proactive
+                incident resolution.
+            </li>
+
+            <li>
+                Maintain technical documentation, test evidence,
+                deployment records, incident reports, and
+                operational procedures.
             </li>
 
         </ul>
 
-    </section>
+    </div>
 
 
-    <!-- ================= TECHNICAL SKILLS ================= -->
+    <!-- GEBEYA -->
 
-    <section id="technical-skills">
+    <div class="experience-item">
 
-        <h2>Technical Skills</h2>
+        <div class="job-header">
 
-        <div class="grid-container">
-
-            <!-- DEVOPS -->
-
-            <div class="card">
-
-                <h3>DevOps, CI/CD & GitOps</h3>
-
-                <ul>
-
-                    <li>
-                        Jenkins, GitHub Actions & Git Flow
-                    </li>
-
-                    <li>
-                        Ansible & Terraform
-                    </li>
-
-                    <li>
-                        HashiCorp Vault
-                    </li>
-
-                    <li>
-                        Argo CD & GitOps automated deployment
-                    </li>
-
-                    <li>
-                        Release validation & deployment automation
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- KUBERNETES -->
-
-            <div class="card">
-
-                <h3>Containers & Kubernetes</h3>
-
-                <ul>
-
-                    <li>
-                        Docker containerization
-                    </li>
-
-                    <li>
-                        Kubernetes applications and workloads
-                    </li>
-
-                    <li>
-                        Helm charts
-                    </li>
-
-                    <li>
-                        Deployments, Services & Ingress
-                    </li>
-
-                    <li>
-                        RBAC & health-check probes
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- AUTOMATION -->
-
-            <div class="card">
-
-                <h3>Automation & Scripting</h3>
-
-                <ul>
-
-                    <li>
-                        Python automation
-                    </li>
-
-                    <li>
-                        Bash scripting
-                    </li>
-
-                    <li>
-                        Operational automation
-                    </li>
-
-                    <li>
-                        Agents and cron jobs
-                    </li>
-
-                    <li>
-                        Health checks and reporting automation
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- DATABASES -->
-
-            <div class="card">
-
-                <h3>Databases & APIs</h3>
-
-                <ul>
-
-                    <li>
-                        MySQL, PostgreSQL & Oracle
-                    </li>
-
-                    <li>
-                        Database configuration updates
-                    </li>
-
-                    <li>
-                        REST APIs
-                    </li>
-
-                    <li>
-                        Postman
-                    </li>
-
-                    <li>
-                        API & integration testing
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- CLOUD -->
-
-            <div class="card">
-
-                <h3>Cloud & Infrastructure</h3>
-
-                <ul>
-
-                    <li>
-                        AWS and Azure exposure
-                    </li>
-
-                    <li>
-                        VMware virtualization
-                    </li>
-
-                    <li>
-                        Linux: RHEL & Ubuntu
-                    </li>
-
-                    <li>
-                        Windows Server
-                    </li>
-
-                    <li>
-                        Infrastructure operations
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- MONITORING -->
-
-            <div class="card">
-
-                <h3>Monitoring & Observability</h3>
-
-                <ul>
-
-                    <li>
-                        Splunk
-                    </li>
-
-                    <li>
-                        Grafana & Prometheus
-                    </li>
-
-                    <li>
-                        Dashboards & alerting
-                    </li>
-
-                    <li>
-                        Log analysis
-                    </li>
-
-                    <li>
-                        System health checks
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- NETWORKING -->
-
-            <div class="card">
-
-                <h3>Networking & Operations</h3>
-
-                <ul>
-
-                    <li>
-                        TCP/IP & DNS
-                    </li>
-
-                    <li>
-                        Firewalls & load balancing
-                    </li>
-
-                    <li>
-                        Incident management & RCA
-                    </li>
-
-                    <li>
-                        Change management
-                    </li>
-
-                    <li>
-                        SLA/OLA compliance
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROFESSIONAL EXPERIENCE ================= -->
-
-    <section id="experience">
-
-        <h2>Professional Experience</h2>
-
-
-        <!-- 6D -->
-
-        <div class="experience-item">
-
-            <div class="job-header">
-
-                <span class="job-title">
-                    BSS L2 Operation Engineer
-                </span>
-
-                <span class="date">
-                    March 2026 – Present
-                </span>
-
-            </div>
-
-            <div class="company">
-                6D Technologies
-            </div>
-
-            <ul>
-
-                <li>
-                    Provide L2 operational support for internal BSS
-                    applications and integrated third-party systems
-                    in a high-availability production environment.
-                </li>
-
-                <li>
-                    Investigate and resolve application, API, integration,
-                    database, and service incidents through log analysis,
-                    transaction tracing, root-cause analysis, and
-                    cross-team collaboration.
-                </li>
-
-                <li>
-                    Support Kubernetes-based applications using Docker,
-                    Kubernetes, Helm, and Argo CD GitOps workflows.
-                </li>
-
-                <li>
-                    Support CI/CD and deployment automation using Jenkins,
-                    GitHub Actions, Ansible, Bash, and Python.
-                </li>
-
-                <li>
-                    Test and validate application updates, configuration
-                    changes, releases, and new features through functional,
-                    API, integration, smoke, and post-deployment testing.
-                </li>
-
-                <li>
-                    Support application deployments through release
-                    validation, service health checks, post-deployment
-                    monitoring, and issue investigation.
-                </li>
-
-                <li>
-                    Monitor applications and infrastructure using Splunk,
-                    Grafana, and Prometheus and support proactive
-                    incident resolution.
-                </li>
-
-                <li>
-                    Maintain technical documentation, test evidence,
-                    deployment records, incident reports, and
-                    operational procedures.
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- GEBEYA -->
-
-        <div class="experience-item">
-
-            <div class="job-header">
-
-                <span class="job-title">
-                    Operation Centre Senior Specialist
-                </span>
-
-                <span class="date">
-                    August 2024 – March 2026
-                </span>
-
-            </div>
-
-            <div class="company">
-                Gebeya
-            </div>
-
-            <ul>
-
-                <li>
-                    Provided 24/7 end-to-end L1 monitoring and operational
-                    support for BSS/CCS, CRM/CM, TIBCO, mediation,
-                    databases, APIs, and integrated telecom and fintech
-                    services.
-                </li>
-
-                <li>
-                    Monitored application availability, transactions,
-                    infrastructure health, and operational KPIs using
-                    enterprise monitoring tools.
-                </li>
-
-                <li>
-                    Investigated incidents through log analysis,
-                    transaction tracing, alarm monitoring, and coordination
-                    with L2/L3 teams and vendors.
-                </li>
-
-                <li>
-                    Automated monitoring and reporting activities using
-                    Bash and Python, improving operational efficiency
-                    and reducing repetitive manual work.
-                </li>
-
-                <li>
-                    Supported Linux servers, Kubernetes environments,
-                    MySQL databases, production changes, traffic shifts,
-                    and post-change service validation.
-                </li>
-
-                <li>
-                    Managed incidents and service requests according to
-                    SLA/OLA requirements and maintained operational
-                    documentation.
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- TECH MAHINDRA -->
-
-        <div class="experience-item">
-
-            <div class="job-header">
-
-                <span class="job-title">
-                    Software Engineer / NOC
-                </span>
-
-                <span class="date">
-                    September 2023 – August 2024
-                </span>
-
-            </div>
-
-            <div class="company">
-                Tech Mahindra
-            </div>
-
-            <ul>
-
-                <li>
-                    Monitored network infrastructure, enterprise
-                    applications, digital financial services, eKYC
-                    platforms, and customer-facing systems.
-                </li>
-
-                <li>
-                    Used Splunk, Zabbix, dashboards, alarms, and
-                    transaction-monitoring tools to identify service
-                    degradation and operational issues.
-                </li>
-
-                <li>
-                    Performed initial troubleshooting, managed incident
-                    tickets, coordinated escalations, and maintained
-                    technical documentation.
-                </li>
-
-            </ul>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= INTERNSHIPS ================= -->
-
-    <section id="internships">
-
-        <h2>Internships</h2>
-
-        <div class="grid-container">
-
-
-            <div class="card">
-
-                <h3>
-                    System Administration Intern
-                </h3>
-
-                <p>
-                    <strong>
-                        Cognizant (ServiceNow)
-                    </strong>
-                </p>
-
-                <p>
-                    Supported user administration, workflows,
-                    incident management, problem management,
-                    and platform configuration.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>
-                    Core Python & Java Intern
-                </h3>
-
-                <p>
-                    <strong>
-                        Global Quest Technology
-                    </strong>
-                </p>
-
-                <p>
-                    Applied Python and Java programming fundamentals,
-                    object-oriented programming, debugging, and
-                    software-development practices.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>
-                    Software Engineering Intern
-                </h3>
-
-                <p>
-                    <strong>
-                        ECERA Systems
-                    </strong>
-                </p>
-
-                <p>
-                    Gained hands-on exposure to software-development
-                    processes, testing, engineering methodologies,
-                    and collaborative technical workflows.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="grid-container">
-
-
-            <!-- RAG -->
-
-            <div class="card">
-
-                <h3>
-                    Enterprise RAG / AIOps Platform
-                </h3>
-
-                <p>
-                    Developing an enterprise-grade
-                    Retrieval-Augmented Generation platform
-                    focused on telecom operations, including
-                    document ingestion, chunking, embeddings,
-                    vector search, hybrid retrieval, reranking,
-                    grounding, evaluation, Agentic RAG, MCP,
-                    and AIOps integration.
-                </p>
-
-                <div class="tag-container">
-
-                    <span class="tag">
-                        Python
-                    </span>
-
-                    <span class="tag">
-                        RAG
-                    </span>
-
-                    <span class="tag">
-                        LLM
-                    </span>
-
-                    <span class="tag">
-                        FAISS
-                    </span>
-
-                    <span class="tag">
-                        AIOps
-                    </span>
-
-                    <span class="tag">
-                        MCP
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- ERP -->
-
-            <div class="card">
-
-                <h3>
-                    ERP System — Enterprise SaaS Platform
-                </h3>
-
-                <p>
-                    Developed an enterprise-grade ERP SaaS
-                    application with core business workflows,
-                    backend services, and database integration.
-                    Applied Docker, Kubernetes, CI/CD, and
-                    GitOps practices to support automated
-                    deployment, scalability, and maintainability.
-                </p>
-
-                <div class="tag-container">
-
-                    <span class="tag">
-                        Spring Boot
-                    </span>
-
-                    <span class="tag">
-                        Docker
-                    </span>
-
-                    <span class="tag">
-                        Kubernetes
-                    </span>
-
-                    <span class="tag">
-                        CI/CD
-                    </span>
-
-                    <span class="tag">
-                        GitOps
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- MONITORING -->
-
-            <div class="card">
-
-                <h3>
-                    Automated Monitoring & Alerting
-                </h3>
-
-                <p>
-                    Developed Bash and Python automation for
-                    monitoring alerts, reporting, health checks,
-                    and operational tasks. Used Splunk, Grafana,
-                    and Prometheus to improve system visibility
-                    and support incident investigation.
-                </p>
-
-                <div class="tag-container">
-
-                    <span class="tag">
-                        Python
-                    </span>
-
-                    <span class="tag">
-                        Bash
-                    </span>
-
-                    <span class="tag">
-                        Splunk
-                    </span>
-
-                    <span class="tag">
-                        Grafana
-                    </span>
-
-                    <span class="tag">
-                        Prometheus
-                    </span>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CERTIFICATIONS ================= -->
-
-    <section id="certifications">
-
-        <h2>
-            Certifications & Professional Training
-        </h2>
-
-        <div class="tag-container">
-
-            <span class="tag">
-                Azure DevOps & CI/CD — Udemy
+            <span class="job-title">
+                Operation Centre Senior Specialist
             </span>
 
-            <span class="tag">
-                Docker & Containerization — Udemy
-            </span>
-
-            <span class="tag">
-                Kubernetes Fundamentals — Udemy
-            </span>
-
-            <span class="tag">
-                Linux Essentials — Udemy
-            </span>
-
-            <span class="tag">
-                Python & Bash Scripting
-            </span>
-
-            <span class="tag">
-                VMware Data Center Virtualization
-            </span>
-
-            <span class="tag">
-                Red Hat Linux System Administration
-            </span>
-
-            <span class="tag">
-                CCNA Training — Addis Ababa University
-            </span>
-
-            <span class="tag">
-                Azure Network Engineering
-            </span>
-
-            <span class="tag">
-                Splunk Core Fundamentals
-            </span>
-
-            <span class="tag">
-                ITIL Foundation
+            <span class="date">
+                August 2024 – March 2026
             </span>
 
         </div>
 
-    </section>
+        <div class="company">
+            Gebeya
+        </div>
+
+        <ul>
+
+            <li>
+                Provided 24/7 end-to-end L1 monitoring and operational
+                support for BSS/CCS, CRM/CM, TIBCO, mediation,
+                databases, APIs, and integrated telecom and fintech
+                services.
+            </li>
+
+            <li>
+                Monitored application availability, transactions,
+                infrastructure health, and operational KPIs using
+                enterprise monitoring tools.
+            </li>
+
+            <li>
+                Investigated incidents through log analysis,
+                transaction tracing, alarm monitoring, and coordination
+                with L2/L3 teams and vendors.
+            </li>
+
+            <li>
+                Automated monitoring and reporting activities using
+                Bash and Python, improving operational efficiency
+                and reducing repetitive manual work.
+            </li>
+
+            <li>
+                Supported Linux servers, Kubernetes environments,
+                MySQL databases, production changes, traffic shifts,
+                and post-change service validation.
+            </li>
+
+            <li>
+                Managed incidents and service requests according to
+                SLA/OLA requirements and maintained operational
+                documentation.
+            </li>
+
+        </ul>
+
+    </div>
 
 
-    <!-- ================= EDUCATION ================= -->
+    <!-- TECH MAHINDRA -->
 
-    <section id="education">
+    <div class="experience-item">
 
-        <h2>
-            Education
-        </h2>
+        <div class="job-header">
+
+            <span class="job-title">
+                Software Engineer / NOC
+            </span>
+
+            <span class="date">
+                September 2023 – August 2024
+            </span>
+
+        </div>
+
+        <div class="company">
+            Tech Mahindra
+        </div>
+
+        <ul>
+
+            <li>
+                Monitored network infrastructure, enterprise
+                applications, digital financial services, eKYC
+                platforms, and customer-facing systems.
+            </li>
+
+            <li>
+                Used Splunk, Zabbix, dashboards, alarms, and
+                transaction-monitoring tools to identify service
+                degradation and operational issues.
+            </li>
+
+            <li>
+                Performed initial troubleshooting, managed incident
+                tickets, coordinated escalations, and maintained
+                technical documentation.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTERNSHIPS ================= -->
+
+<section id="internships">
+
+    <h2>Internships</h2>
+
+    <div class="grid-container">
+
 
         <div class="card">
 
             <h3>
-                Bachelor of Technology in Electrical & Electronics Engineering
+                System Administration Intern
             </h3>
 
             <p>
                 <strong>
-                    GITAM University, India
+                    Cognizant (ServiceNow)
                 </strong>
-                — SII Scholarship
             </p>
+
+            <p>
+                Supported user administration, workflows,
+                incident management, problem management,
+                and platform configuration.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Core Python & Java Intern
+            </h3>
 
             <p>
                 <strong>
-                    First Class Distinction | CGPA: 3.87
+                    Global Quest Technology
                 </strong>
             </p>
 
             <p>
-                Won multiple hackathons and scholarships and
-                received first-rank academic awards.
+                Applied Python and Java programming fundamentals,
+                object-oriented programming, debugging, and
+                software-development practices.
             </p>
 
         </div>
 
-    </section>
 
+        <div class="card">
 
-    <!-- ================= LANGUAGES ================= -->
+            <h3>
+                Software Engineering Intern
+            </h3>
 
-    <section id="languages">
+            <p>
+                <strong>
+                    ECERA Systems
+                </strong>
+            </p>
 
-        <h2>
-            Languages
-        </h2>
-
-        <div class="tag-container">
-
-            <span class="tag">
-                English — Fluent
-            </span>
-
-            <span class="tag">
-                Amharic — Native
-            </span>
+            <p>
+                Gained hands-on exposure to software-development
+                processes, testing, engineering methodologies,
+                and collaborative technical workflows.
+            </p>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= FOOTER ================= -->
+<!-- ================= PROJECTS ================= -->
 
-    <div class="footer">
+<section id="projects">
 
-        BSS L2 Support || DevOps Engineer
-        | Docker & Nginx | 2026
+    <h2>Projects</h2>
+
+    <div class="grid-container">
+
+
+        <!-- ENTERPRISE RAG -->
+
+        <div class="card">
+
+            <h3>
+                Enterprise RAG / AIOps Platform
+            </h3>
+
+            <p>
+                Developing an enterprise AI platform for telecom
+                operations combining Retrieval-Augmented Generation,
+                vector search, hybrid retrieval, reranking,
+                grounded generation, Agentic RAG, MCP, and
+                intelligent operational analysis.
+            </p>
+
+            <div class="tag-container">
+
+                <span class="tag">Python</span>
+                <span class="tag">LLM</span>
+                <span class="tag">RAG</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">LangGraph</span>
+                <span class="tag">FAISS</span>
+                <span class="tag">AIOps</span>
+                <span class="tag">MCP</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ERP -->
+
+        <div class="card">
+
+            <h3>
+                ERP System — Enterprise SaaS Platform
+            </h3>
+
+            <p>
+                Developed an enterprise-grade ERP SaaS application
+                with backend services and database integration.
+                Applied Docker, Kubernetes, CI/CD, and GitOps
+                practices for automated deployment and
+                cloud-native application operations.
+            </p>
+
+            <div class="tag-container">
+
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">CI/CD</span>
+                <span class="tag">GitOps</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- MONITORING -->
+
+        <div class="card">
+
+            <h3>
+                Automated Monitoring & Alerting
+            </h3>
+
+            <p>
+                Developed Python and Bash automation for health
+                checks, monitoring alerts, reporting, and
+                operational tasks using enterprise observability
+                platforms.
+            </p>
+
+            <div class="tag-container">
+
+                <span class="tag">Python</span>
+                <span class="tag">Bash</span>
+                <span class="tag">Splunk</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Prometheus</span>
+
+            </div>
+
+        </div>
 
     </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section id="certifications">
+
+    <h2>
+        Certifications & Professional Training
+    </h2>
+
+    <div class="tag-container">
+
+        <span class="tag">
+            Azure DevOps & CI/CD — Udemy
+        </span>
+
+        <span class="tag">
+            Docker & Containerization — Udemy
+        </span>
+
+        <span class="tag">
+            Kubernetes Fundamentals — Udemy
+        </span>
+
+        <span class="tag">
+            Linux Essentials — Udemy
+        </span>
+
+        <span class="tag">
+            Python & Bash Scripting
+        </span>
+
+        <span class="tag">
+            VMware Data Center Virtualization
+        </span>
+
+        <span class="tag">
+            Red Hat Linux System Administration
+        </span>
+
+        <span class="tag">
+            CCNA Training — Addis Ababa University
+        </span>
+
+        <span class="tag">
+            Azure Network Engineering
+        </span>
+
+        <span class="tag">
+            Splunk Core Fundamentals
+        </span>
+
+        <span class="tag">
+            ITIL Foundation
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+    <h2>
+        Education
+    </h2>
+
+    <div class="card">
+
+        <h3>
+            Bachelor of Technology in Electrical & Electronics Engineering
+        </h3>
+
+        <p>
+            <strong>
+                GITAM University, India
+            </strong>
+            — SII Scholarship
+        </p>
+
+        <p>
+            <strong>
+                First Class Distinction | CGPA: 3.87
+            </strong>
+        </p>
+
+        <p>
+            Won multiple hackathons and scholarships and
+            received first-rank academic awards.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LANGUAGES ================= -->
+
+<section id="languages">
+
+    <h2>
+        Languages
+    </h2>
+
+    <div class="tag-container">
+
+        <span class="tag">
+            English — Fluent
+        </span>
+
+        <span class="tag">
+            Amharic — Native
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<div class="footer">
+
+    BSS L2 Support || DevOps Engineer
+    | AI Engineering • AIOps • RAG | 2026
+
+</div>
+```
 
 </div>
 
