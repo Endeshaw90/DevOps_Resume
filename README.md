@@ -18,7 +18,7 @@
 
 Current Focus
 =============
-AI Engineering • AIOps • RAG • LLMOps • AI Agents • MCP • Kubernetes • DevOps • Cloud • Platform Engineering • Intelligent Automation
+**AI Engineering and DevOps**: AIOps • RAG • LLMOps • AI Agents • MCP • Kubernetes • DevOps • Cloud • Platform Engineering • Intelligent Automation
 
 # 🚀 More details are here below:
 
