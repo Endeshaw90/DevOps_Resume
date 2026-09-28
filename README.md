@@ -1,7 +1,7 @@
 [![Deployment Status](https://github.com/Endeshaw90/my_cv/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Endeshaw90/my_cv/actions)
 
 ## 🛠️ Core Skills
-==================
+
 **DevOps & Platform:** Docker • Kubernetes • Helm • Argo CD • GitOps • Linux
 **CI/CD & IaC:** Jenkins • GitHub Actions • GitLab CI/CD • Terraform • Ansible
 **Cloud & Security:** AWS • Azure • HashiCorp Vault
